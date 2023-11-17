@@ -1,0 +1,10 @@
+function SpeedLimt(speed){
+    const speedlimit =70;
+    const Kmperpoint =5;
+    let point = Math.floor((speed-speedlimit)/Kmperpoint);
+    if(point >12)
+        return 'license suspended';
+    return point;
+}
+
+console.log('point : ',SpeedLimt(120));

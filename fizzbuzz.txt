@@ -1,0 +1,14 @@
+function fizzbuzz1(a){
+
+ if(typeof(a)!=='number')
+    return 'Not a Number';   
+ if (a%3===0 && a%5===0)
+    return 'fizzbuzz';
+ if(a%3===0)
+    return 'fizz';
+ if(a%5===0)
+    return 'buzz';
+
+    return a;
+}
+console.log("ans =" ,fizzbuzz1(30));
