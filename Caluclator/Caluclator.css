@@ -1,26 +1,56 @@
-.Caluclator{
-    height: 300px;
-    width: 200px;
+*{
+    position: 0;
+    margin: 0;
+}
+
+body{
     display: flex;
-    background-color: rgb(144, 144, 153);
-    box-shadow: rgb(82, 150, 150);
-    border-radius: 20px;
-    border-color: black;
-    border: 1px;
-}
-
-.head{
-    padding-left: 10px;
-    color: rgb(218, 227, 236);
     justify-content: center;
-
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(233, 148, 21);
 }
+
+.container{
+    position: relative;
+}
+
+.caluclator{
+    height: 350px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 8px;
+    background-color: rgb(99, 97, 96);
+    box-shadow: 0px 0px 30px #0e0d0d;
+}
+
 .screen{
     position: relative;
-    border: 2cap;
+    width: 230px;
     height: 100px;
-    width: 200px;
-    background-color: azure;
-    margin-top: 15px;
-    border-radius: 10px;
+    border-radius: 5%;
+    background-color: #b9a9a9;
+    box-shadow: 0px 0px 20px #3d3c3c;
 }
+
+.numbers{
+    position: absolute;
+    width: 150px;
+    height: 210;
+}
+
+.elements{
+    display: flexbox;
+    position: absolute;
+    transform: scale();
+    
+
+}
+
+.elements button {
+    width: 40px;
+    height: 40px;
+}
+

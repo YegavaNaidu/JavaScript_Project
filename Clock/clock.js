@@ -29,5 +29,5 @@ function displayTime(){
 }
 
 
-
-setInterval(displayTime,100);
+//it will recall function display every milli second
+setInterval(displayTime,1000);
