@@ -1,56 +1,71 @@
+
 *{
-    position: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgb(233, 148, 21);
+    background:linear-gradient(90deg,#0a0a0a,rgba(44, 44, 43, 0.582));
 }
 
 .container{
+    height: 300px;
+    width: 300px;
+    background: transparent;
     position: relative;
+
 }
 
 .caluclator{
-    height: 350px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    border-radius: 8px;
-    background-color: rgb(99, 97, 96);
-    box-shadow: 0px 0px 30px #0e0d0d;
+    padding: 10px;
+    border: 1px solid #bebdbd;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(236, 245, 202, 0.5);
 }
 
-.screen{
-    position: relative;
-    width: 230px;
-    height: 100px;
-    border-radius: 5%;
-    background-color: #b9a9a9;
-    box-shadow: 0px 0px 20px #3d3c3c;
+input{
+    width: 100%;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background:transparent ;
+    box-shadow: 0px 3px 15px rgb(84,84,84,0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    }
+
+input::placeholder{
+    color: rgb(255, 255, 255);
 }
 
-.numbers{
-    position: absolute;
-    width: 150px;
-    height: 210;
-}
-
-.elements{
-    display: flexbox;
-    position: absolute;
-    transform: scale();
-    
-
-}
-
-.elements button {
+button{
+    border: none;
     width: 40px;
     height: 40px;
+    margin: 12px;
+    border-radius: 50%;
+    background: transparent;
+    color: aliceblue;
+    font-size: large;
+    box-shadow: -8px -8px 15px rgb(255, 255, 255,0.1);
+    
 }
 
+button:hover{
+    background-color: rgb(215, 223, 220);
+    color: #0a0a0a;
+}
+.eq-btn{
+    background-color: orange;
+}
+
+.op-btn{
+    color: rgb(119, 235, 119);
+}
